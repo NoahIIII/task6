@@ -1,0 +1,67 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #e0d7f9; /* Light Purple */
+    margin: 0;
+    padding: 0;
+}
+
+.custom-container {
+    background-color: #f2e9ff; /* Lighter Purple */
+    border-radius: 10px;
+    padding: 40px;
+    width: 400px; /* Set a max-width for better alignment on bigger screens */
+    box-shadow: 0 6px 15px rgba(104, 58, 183, 0.25); /* Enhanced Shadow for Depth */
+    position: relative; /* for profile-btn to be positioned relative to this */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="password"] {
+    border: 2px solid #d1c6e7; /* Slight Purple Border */
+    border-radius: 5px;
+    padding: 10px 12px;
+    font-size: 15px;
+    transition: border-color 0.3s, box-shadow 0.3s; 
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #673ab7;
+    box-shadow: 0 0 8px rgba(104, 58, 183, 0.3);
+}
+
+.btn-custom {
+    background: linear-gradient(90deg, #673ab7, #8e44ad); /* Gradient from purple shades */
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.3s;
+    font-size: 16px;
+}
+
+.btn-custom:hover {
+    background: linear-gradient(90deg, #5a2d91, #782c8b);
+    transform: scale(1.05); /* A slight zoom on hover */
+}
+
+.profile-btn {
+    background-color: #673ab7; /* Purple */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: -15px; /* Slight offset for a neat overlap effect */
+    left: -15px; 
+    transition: background-color 0.3s, box-shadow 0.3s;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(104, 58, 183, 0.2); /* Shadow for depth */
+}
+
+.profile-btn:hover {
+    background-color: #5a2d91; /* Slightly Darker Purple */
+    box-shadow: 0 5px 10px rgba(104, 58, 183, 0.3); /* Enhanced Shadow on hover */
+}
